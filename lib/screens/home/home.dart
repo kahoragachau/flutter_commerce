@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Garage Sale Product"),
-        actions: [CartIcon()],
+        actions: const [CartIcon()],
       ),
 
       body: Padding(
