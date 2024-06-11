@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_commerce/shared/cart_icon.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
