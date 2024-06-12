@@ -15,3 +15,7 @@ const List<Product> allProducts = [
 final productsProvider = Provider((ref) {
   return allProducts;
 });
+
+final reducedProductsProvider = Provider((ref) {
+  return allProducts.where((element) => element.price < 50).toList();
+});
