@@ -1,4 +1,5 @@
 import 'package:flutter_commerce/models/product.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 const List<Product> allProducts = [
   Product(id: "1", title: "Groovy Shorts", price: 12, image: "assets/products/shorts.png"),
@@ -10,3 +11,7 @@ const List<Product> allProducts = [
   Product(id: "7", title: "Roller Skates", price: 52, image: "assets/products/skates.png"),
   Product(id: "8", title: "Electric Guitar", price: 79, image: "assets/products/guitar.png"),
 ];
+
+final productsProvider = Provider((ref) {
+  return allProducts;
+});
