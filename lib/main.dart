@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_commerce/screens/home/home.dart';
+import 'package:flutter_commerce/screens/home/home_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const ProviderScope(child: MyApp()));
 }
 
